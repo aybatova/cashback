@@ -3,9 +3,7 @@ package ru.itpark;
 public class CashbackService {
     int cashBack(int sumCategorySimple, int sumCategoryPriority, int sumCategorySuper) {
 
-        int resultCategorySimple = 0;
-        int resultCategoryPriority = 0;
-        int resultCategorySuper = 0;
+
         int categoryPriorityPersent = 5;
         int categorySuperPersent = 30;
         int resultLimit = 3000;
