@@ -1,6 +1,6 @@
 package ru.itpark;
 
-public class CashbackService {
+class CashbackService {
     int cashBack(int sumCategorySimple, int sumCategoryPriority, int sumCategorySuper) {
 
 
@@ -8,7 +8,7 @@ public class CashbackService {
         int categorySuperPersent = 30;
         int resultLimit = 3000;
 
-        int resultCommon = (sumCategorySimple / 100) + ((sumCategoryPriority * categoryPriorityPersent) / 100) + ((sumCategorySuper * categorySuperPersent) / 100);
+        int resultCommon = (sumCategorySimple / 100) + (sumCategoryPriority * categoryPriorityPersent / 100) + (sumCategorySuper * categorySuperPersent / 100);
         if (resultCommon < resultLimit) {
             return resultCommon;
         } else {
